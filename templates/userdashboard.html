@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H4L5T1S7RL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H4L5T1S7RL');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{# <link href="electronic.css" rel="stylesheet">#}
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/hover.css' %}" rel="stylesheet">
+     <script src="{% static 'js/wow.js' %}"></script>
+      <script>
+          wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif;
+/* background-color:wheat; */
+}
+
+.sidebar {
+  height:100%;
+  /* width:100%px; */
+  /* position: relative; */
+  /* z-index: 1; */
+  /* top:10px; */
+  /* left: 0; */
+  /* background-color: #111; */
+  /* overflow-x: hidden; */
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.header
+{
+  width: 100%;
+  height: 100px;
+}
+.bod
+{
+  height: 550px;
+  width: 100%;
+}
+.bg{
+    background-color:lavender;
+}
+h1{
+  text-align: center;
+    font-weight: bold;
+  line-height: 100px;
+    color: skyblue;
+    font-style:oblique ;
+    text-decoration:underline;
+
+
+}
+h1:hover{
+    color:aqua;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+background-color:black;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:gainsboro;
+  color:black;
+    font-style: italic;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+    {#text-shadow:1px 1px;#}
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+    height: 50px;
+    width: 50px;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.sho{
+    background-color:gray ;
+
+}
+.sho:hover{
+    background-color:lightsteelblue;
+}
+
+.icons div
+{
+height: 2.5rem;
+width: 2.5rem;
+border: 1px solid;
+line-height:2.5rem;
+border-radius:.5rem;
+background: #eee;
+color: var(--black);
+font-size: 1.2rem;
+margin-right:5px;
+text-align: center;
+cursor: pointer;
+}
+.icons div:hover
+{
+background-color: var(--green);
+color: white;
+}
+.icons{
+    display: flex;
+    justify-content:center;
+    margin:25px;
+}
+img{
+    height: 80px;
+    width: 150px;
+    line-height: 100px;
+    margin:8px 0px 0px 25px;
+    border-radius: 50%;
+    border: #00eeff 2px solid;
+}
+img:hover{
+    border:#04AA6D 2px solid;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+
+<div class="container-fliud">
+  <div class="row bg-secondary">
+
+        <div class="col-sm-2  header bg-dark "><img src="{% static 'img/home/logo.webp' %}" id="" class="wow slideInLeft"> </div>
+        <div class="col-sm-8 header "><h1 class="wow slideInDown">Welcom-Admin</h1></div>
+        <div class="col-sm-2  header ">
+            <div class="icons">
+     <a href="../login"><div class="fa fa-user wow slideInRight" id="user-btn " ></div></a>
+        </div></div>
+
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-2  bod">
+      <div class="sidebar">
+      <a href="../userdashboard" class="wow slideInDown"><div class="fa fa-bars " id="menu-btn"></div> <span class="text-info fs-5 ">DASHBOARD</span></a>
+       <a href="#" class="wow slideInDown" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><div class="fa fa-bars" id="menu-btn"></div>  Add Category</a>
+
+  <a href="#" class="wow slideInDown"  onclick="document.getElementById('id04').style.display='block'" style="width:auto;"><div class="fa fa-bars" id="menu-btn"></div>  Add Slider</a>
+          <a href="#"class="wow slideInDown" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><div class="fa fa-bars" id="menu-btn"></div>  Add Product</a>
+          <a href="#" class="wow slideInDown" onclick="document.getElementById('id03').style.display='block'" style="width:auto;"><div class="fa fa-bars" id="menu-btn"></div>  Add Brand</a>
+           <a href="#services" class="wow slideInDown"><div class="fa fa-bars" id="menu-btn"></div>  Customers</a>
+           <a href="#contact" class="wow slideInDown"><div class="fa fa-bars" id="menu-btn"></div>  Oders</a>
+
+      <a href="../" class="wow slideInDown"><div class="fa fa-bars" id="menu-btn"></div>  Home</a>
+      <a href="../login" class="wow slideInDown"><div class="fa fa-bars" id="menu-btn"></div>  Logout</a>
+    </div></div>
+    <div class="col-sm-10 bg bod">
+      <div class="container mt-5">
+  <div class="row mt-5 mb-5">
+
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 ">
+      <div class="card sho wow slideInLeft">
+        <!-- <img src="product1.jpg" class="card-img-top" alt="Product 1"> -->
+        <div class="card-body ">
+          <h5 class="text-center ">PRODUCTS</h5>
+          <a href="../show"><button class="btn btn-sm hvr hvr-sweep-to-left">SHOW</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat similar card components for other products -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+
+       <div class="card sho wow slideInDown">
+        <!-- <img src="product1.jpg" class="card-img-top" alt="Product 1"> -->
+        <div class="card-body">
+         <h5 class=" text-center"> CATEGORIES</h5>
+         <a href="../showcatep">  <button class="btn btn-sm hvr hvr-curl-top-left">SHOW</button></a>
+          <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+        </div>
+      </div>
+    </div>
+     <!-- Repeat similar card components for other products --> <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card sho wow slideInDown">
+        <!-- <img src="product1.jpg" class="card-img-top" alt="Product 1"> -->
+        <div class="card-body">
+          <h5 class="text-center">ORDERS</h5>
+         <a href="../showorder"> <BUTTON class="btn btn-sm hvr hvr-shutter-in-vertical">SHOW</BUTTON></a>
+          <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+        </div>
+      </div>
+    </div>
+     <!-- Repeat similar card components for other products -->
+     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card sho wow slideInRight">
+        <!-- <img src="product1.jpg" class="card-img-top" alt="Product 1"> -->
+        <div class="card-body">
+          <h5 class="text-center">USERS</h5>
+        <a href="../showuser"> <button class="btn btn-sm hvr hvr-shutter-in-horizontal">SHOW</button></a>
+          <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- second row -->
+    <div class="row mt-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card sho wow slideInLeft">
+          <!-- <img src="product1.jpg" class="card-img-top" alt="Product 1"> -->
+          <div class="card-body">
+            <h5 class="text-center">CONTACTS</h5>
+           <a href="../showcontact"> <button class="btn btn-sm hvr hvr-radial-out">SHOW</button></a>
+            <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar card components for other products -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card sho wow slideInDown">
+          <!-- <img src="product1.jpg" class="card-img-top" alt="Product 1"> -->
+          <div class="card-body">
+            <h5 class="text-center">Brand</h5>
+           <a href="../showbrandp"> <button class="btn btn-sm hvr hvr-rectangle-out">SHOW</button></a>
+            <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+          </div>
+        </div>
+      </div>
+       <!-- Repeat similar card components for other products --> <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card sho wow slideInDown">
+          <!-- <img src="product1.jpg" class="card-img-top" alt="Product 1"> -->
+          <div class="card-body">
+            <h5 class="text-center ">Slider</h5>
+            <a href="../showslider"> <button class="btn btn-sm hvr hvr-sweep-to-top">SHOW</button></a>
+            <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+          </div>
+        </div>
+      </div>
+       <!-- Repeat similar card components for other products --> <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card sho wow slideInRight">
+          <!-- <img src="product1.jpg" class="card-img-top" alt="Product 1"> -->
+          <div class="card-body">
+            <h5 class="text-center ">Product 1</h5>
+            <a href="#"> <button class="btn btn-sm hvr hvr-radial-in">$19.99</button></a>
+            <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+          </div>
+        </div>
+      </div>
+
+
+</div>
+</div>
+  </div>
+</div>
+{#add image form#}
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="../addimgcode/" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="{% static 'img/home/logo.png' %}" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+
+      <label for="uname"><b>Add product</b></label>
+      <input type="file"  name="image" required>
+<br>
+        <label for="psw"><b>Add Name</b></label>
+      <input type="password"  name="name" required>
+
+      <label for="psw"><b>Add price</b></label>
+      <input type="password"  name="price" required>
+
+        <label for="psw"><b>Add Discount</b></label>
+      <input type="password" name="discount" required>
+
+      <button type="submit">submit</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Login/<a href="#">Sigin</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+{#add category#}
+<div id="id02" class="modal">
+
+  <form class="modal-content animate" action="../addcategorycode/" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="{% static 'img/home/logo.png' %}" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+
+      <label for="uname"><b>Add Image</b></label>
+      <input type="file"  name="image" required>
+<br>
+      <label for="psw"><b>Add Name </b></label>
+      <input type="text"  name="name" required>
+
+{#        <label for="psw"><b>Add Discount</b></label>#}
+{#      <input type="password" name="discount" required>#}
+
+      <button type="submit">submit</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+{#add brand#}
+<div id="id03" class="modal">
+
+  <form class="modal-content animate" action="../addbrandcode/" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="{% static 'img/home/logo.png' %}" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+
+      <label for="uname"><b> Brand Image</b></label>
+      <input type="file"  name="image" required>
+<br>
+      <label for="psw"><b> Brand Name </b></label>
+      <input type="password"  name="name" required>
+
+{#        <label for="psw"><b>Add Discount</b></label>#}
+{#      <input type="password" name="discount" required>#}
+
+      <button type="submit">submit</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+{#add slider#}
+<div id="id04" class="modal">
+
+  <form class="modal-content animate" action="../addslidercode/" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="{% static 'img/home/logo.png' %}" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+
+      <label for="uname"><b> slider Image</b></label>
+      <input type="file"  name="image" required>
+<br>
+      <label for="psw"><b> slider Name </b></label>
+      <input type="password"  name="name" required>
+
+{#        <label for="psw"><b>Add Discount</b></label>#}
+{#      <input type="password" name="discount" required>#}
+
+      <button type="submit">submit</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id04');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H4L5T1S7RL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H4L5T1S7RL');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myshop|electronic</title>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <title>Hello, world!</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="{% static 'homepage.css' %}" rel="stylesheet">
+     <!-- <link href="product.css" rel="stylesheet"> -->
+    <link href="{% static 'electronic.css' %}" rel="stylesheet"> <link href="{% static 'css/hover.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+     <link href="{% static 'fonts/font-awesome.css' %}" rel="stylesheet">
+    <srcipt src="{% static 'js/wow.js' %}"></srcipt>
+</head>
+
+<body>
+   <!-- navbar -->
+  {% include 'navbar.html' %}
+    <!-- navbar close -->
+    <!-- slider section -->
+  <section class="slidershadow">
+    <div class="container-fliud">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item ">
+            <img class="d-block w-100 simg" src="{% static 'img/electronics/electronic_slider1.jpg' %}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 simg" src="{% static 'img/electronics/electronic_slider2.jpg' %}" alt="seven slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 simg" src="{% static 'img/electronics/electronic_slider3.jpg' %}" alt="Second slide">
+          </div>
+
+          <div class="carousel-item active">
+            <img class="d-block w-100 simg" src="{% static 'img/electronics/electronic_slider5.jpg' %}" alt="fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 simg" src="{% static 'img/electronics/electronic_slider4.jpg'%}" alt="fifth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 simg" src="{% static 'img/electronics/electronic_slider6.jpg' %}" alt="six slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 simg" src="{% static 'img/electronics/electronic_slider7.jpg' %}" alt="Third slide">
+          </div>
+
+          <div class="carousel-item ">
+            <img class="d-block w-100 simg" src="{% static 'img/electronics/electronic_slider8.jpg' %}" alt="First slide">
+          </div>
+
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+    <!-- slider section close-->
+<!--smartwatch poster-->
+  <div class="container mt-5">
+    <div> <img src="{% static 'img/electronics/smartwatch.jpg' %}"  class="h hvr hvr-wobble-skew"/></div>
+  </div>
+<!-- first row of product-->
+  <div class="container mt-5">
+    <div class="row ">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+        <div class="card">
+          <img src="{% static 'img/electronics/electronic_card1.gif' %}" class="card-img-top" alt="Product 1" style="height: 20rem;">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+        <div class="card">
+          <img src="{% static 'img/electronics/electronic_card2.gif' %}" class="card-img-top" alt="Product 1" style="height: 20rem;">
+          <!-- <div class="card-body"> -->
+            <!-- <h5 class="card-title">Product 1</h5> -->
+            <!-- <p class="card-text">$19.99</p> -->
+            <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+        <div class="card">
+          <img src="{% static 'img/electronics/electronic_card3.gif' %}" class="card-img-top" alt="Product 1" style="height: 20rem;">
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+        <div class="card">
+          <img src="{% static 'img/electronics/electronic_card4.gif' %}" class="card-img-top" alt="Product 1" style="height:20rem;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- first row close-->
+<!-- second row -->
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+<div class="card">
+   <img src="{% static 'img/electronics/electronic_card5.jpg' %}" class="card-img-top" alt="Product 1" style="height: 20rem;">
+
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+<div class="card">
+ <img src="{% static 'img/electronics/electronic_card6.gif' %}" class="card-img-top" alt="Product 1" style="height: 20rem">
+
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+<div class="card">
+<img src="{% static 'img/electronics/electronic_card7.gif' %}" class="card-img-top" alt="Product 1" style="height:20rem;">
+
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+<div class="card">
+<img src="{% static 'img/electronics/electronic_card8.gif' %}" class="card-img-top" alt="Product 1" style="height: 20rem;">
+
+</div>
+</div>
+</div>
+</div>
+   <!-- second row close -->
+
+<!--Top Deals Poster-->
+<div class="container ">
+  <div><img src="{% static 'img/electronics/topdeal.jpg' %}"  class="h hvr hvr-wobble-skew"></div>
+</div>
+
+   <!-- third  row -->
+   <div class="container mt-5">
+<div class="row ">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+    <div class="card">
+      <img src="{% static 'img/electronics/electronic_card9.gif' %}" class="card-img-top" alt="Product 1" style="height:20rem;">
+
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+    <div class="card">
+      <img src="{% static 'img/electronics/electronic_card10.gif' %}" class="card-img-top" alt="Product 1" style="height:20rem;">
+      <!-- <div class="card-body"> -->
+        <!-- <h5 class="card-title">Product 1</h5> -->
+        <!-- <p class="card-text">$19.99</p> -->
+        <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+    <div class="card">
+      <img src="{% static 'img/electronics/electronic_card11.gif' %}" class="card-img-top" alt="Product 1" style="height:20rem;">
+
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+    <div class="card">
+      <img src="{% static 'img/electronics/electronic_card12.gif' %}" class="card-img-top" alt="Product 1" style="height:20rem;">
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- third  row close-->
+
+   <!-- fourth  row -->
+   <div class="container">
+<div class="row">
+
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+<div class="card">
+<img src="{% static 'img/electronics/electronic_card13.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+<div class="card">
+<img src="{% static 'img/electronics/electronic_card14.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+<div class="card">
+<img src="{% static 'img/electronics/electronic_card15.gif'%}" class="card-img-top" alt="Product 1" style="height:18rem;">
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 " id="ch">
+<div class="card">
+<img src="{% static 'img/electronics/electronic_card16.gif' %}" class="card-img-top" alt="Product 1" style="height: 18rem;">
+</div>
+</div>
+
+</div>
+</div>
+<!-- fourth  row close-->
+
+<!--poster premium smartphone-->
+<div class="container">
+  <div><img src="{% static 'img/electronics/smartphone.jpg' %}"  class="h hvr hvr-wobble-skew"></div>
+</div><br>
+
+<!-- first row -->
+<div class="container">
+  <div class="row">
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card17.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card18.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card19.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card20.gif' %}" class="card-img-top" alt="Product 1" style="height: 18rem;">
+  </div>
+  </div>
+  </div>
+  </div>
+<!-- first row close-->
+
+<!-- second row -->
+<div class="container">
+  <div class="row">
+
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card24.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card22.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card23.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card21.gif' %}" class="card-img-top" alt="Product 1" style="height: 18rem;">
+  </div>
+  </div>
+  </div>
+  </div>
+   <!-- second row close -->
+
+   <!-- third row -->
+   <div class="container">
+  <div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card25.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card26.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card27.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card28.gif' %}" class="card-img-top" alt="Product 1" style="height: 18rem;">
+  </div>
+  </div>
+  </div>
+  </div>
+<!-- third row close-->
+
+   <!-- fourth row -->
+   <div class="container">
+  <div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card29.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card30.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card31.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/electronic_card32.gif' %}" class="card-img-top" alt="Product 1" style="height: 18rem;">
+  </div>
+  </div>
+
+  </div>
+  </div>
+<!-- fourth row close-->
+
+
+<!-- new -->
+   <div class="container">
+  <div class="row">
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+   <div class="card">
+  <img src="{% static 'img/electronics/e12.jpg' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e11.jpg' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e10.gif' %}" class="card-img-top" alt="Product 1" style="height:18rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e9.jpg' %}" class="card-img-top" alt="Product 1" style="height: 18rem;">
+  </div>
+  </div>
+
+  </div>
+  </div>
+<!-- new close -->
+
+   <!-- section for electronic products -->
+<!-- first row -->
+   <div class="container">
+  <div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+   <div class="card">
+  <img src="{% static 'img/electronics/e3.jpg' %}" class="card-img-top" alt="Product 1" style="height:8rem;">
+   </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e2.jpg' %}" class="card-img-top" alt="Product 1" style="height:8rem;">
+  </div>
+  </div>
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e4.jpg' %}" class="card-img-top" alt="Product 1" style="height:8rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e.jpg' %}" class="card-img-top" alt="Product 1" style="height: 8rem;">
+  </div>
+  </div>
+  </div>
+  </div>
+
+<!-- first row close-->
+<!-- second  row -->
+<div class="container">
+  <div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+   <div class="card">
+  <img src="{% static 'img/electronics/e8.jpg'%}" class="card-img-top" alt="Product 1" style="height:8rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e7.jpg' %}" class="card-img-top" alt="Product 1" style="height:8rem;">
+  </div>
+  </div>
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e6.jpg' %}" class="card-img-top" alt="Product 1" style="height:8rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e5.jpg' %}" class="card-img-top" alt="Product 1" style="height: 8rem;">
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e16.jpg' %}" class="card-img-top" alt="Product 1" style="height:8rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e13.jpg' %}" class="card-img-top" alt="Product 1" style="height:8rem;">
+  </div>
+  </div>
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e14.jpg' %}" class="card-img-top" alt="Product 1" style="height:8rem;">
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" id="ch">
+  <div class="card">
+  <img src="{% static 'img/electronics/e14 (2).jpg' %}" class="card-img-top" alt="Product 1" style="height: 8rem;">
+  </div>
+  </div>
+  </div>
+  </div>
+
+<!-- fourth  row close-->
+
+
+   <!-- footer secotion -->
+{% include 'footer.html' %}
+    <!-- Footer close-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

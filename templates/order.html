@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H4L5T1S7RL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H4L5T1S7RL');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+    </style>
+    <title>Book Order</title>
+</head>
+<body>
+    <header>
+        <h1>Book Order Form</h1>
+    </header>
+    <main>
+        <form id="book-order-form" action="../orderinsert/" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="book-title">Order Name</label>
+                <input type="text" id="book-title" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Price</label>
+                <input type="text" id="author" name="price" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quit" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="shipping-address">Shipping Address:</label>
+                <textarea id="shipping-address" name="addr" rows="4" required></textarea>
+            </div>
+            <button type="submit">Place Order</button><br>
+
+        </form>
+         <a href="../"><button type="submit">Back To Home</button></a>
+        <a href="../product"><button type="submit">More Product</button></a>
+    </main>
+</body>
+</html>

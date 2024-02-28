@@ -1,0 +1,100 @@
+.top
+{
+    height:130px;
+    width:100%;
+    border-radius:20px;
+
+}
+.chart
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: orangered;
+}
+.chart2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:violet;
+}
+.chart3
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:black;
+}
+.chart4
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:lightcoral;
+}
+.chart5
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:violet;
+}
+.imgslider1{
+    height: 400px;
+    width: 100%;
+}
+.boxs
+{
+   display: flex;
+   justify-content: space-around;
+
+}
+/*.boxl*/
+{
+    height:400px;
+    width:300px;
+    /* background-repeat: no-repeat; */
+    background-color:#130f40;
+    /* background-size: 100% 100%; */
+    /* border-radius:10px; */
+    /* float: left; */
+}
+
+.boxc
+{
+    height:200px;
+    width:200px;
+    /* background-repeat: no-repeat; */
+    background-color:#130f40;
+    /* background-size: 100% 100%; */
+    border-radius:50%;
+    /* float: left; */
+}
+
+.boxb
+{
+    height:250px;
+    width:400px;
+    /* background-repeat: no-repeat; */
+    background-color:#130f40;
+    /* background-size: 100% 100%; */
+    /* border-radius:50%; */
+    /* float: left; */
+}
+.lastbox
+{
+   display: flex;
+   justify-content:space-evenly;
+
+}
+.boxlast{
+    height:150px;
+    width: 250px;
+    background-color: #130f40;
+    border-radius: 20px;
+    float: left;
+}
+
+
+

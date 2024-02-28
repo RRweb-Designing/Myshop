@@ -1,0 +1,149 @@
+
+#slidercircle
+{
+    height:100px;
+    width: 100px;
+    margin-left:55px ;
+    /* background-color: aquamarine; */
+    /* background-image: url(img/flp2.webp); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-top:10px;
+    margin-bottom:10px;
+    float: left;
+}
+
+#gcardimg
+{
+    height:240px;
+    width: 250px;
+    /* background-color: rgb(42, 165, 58); */
+    /* background-image: url("img/cat1.webp"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    margin-top: 5px;
+   
+   
+}
+#gcardimg:hover
+{
+border: 1px solid;
+}
+.gcardbtn
+{
+    height: 50px;
+    /* background-color: brown; */
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color:darkgreen;
+    text-shadow: 5px;
+    text-decoration: underline;
+    padding-top: 12px;
+    /* border: 1px solid; */
+
+
+}
+#gpageproductcategory
+{
+    text-align: center;
+    /* padding: 2rem 0; */
+    /* padding-bottom: 3rem; */
+    font-size:2rem;
+    color: var(--black);
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+#gpageproductcategory span{
+    background-color: var(--green);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+
+}
+.bg1
+{
+    background-color:skyblue;
+}
+
+.bg21
+{
+    background-color:skyblue;
+}
+
+.bg22
+{
+    background-color:mediumaquamarine;
+}
+.bg23
+{
+    background-color:skyblue;
+}
+.bg3
+{
+    background-color:skyblue;
+}
+
+
+
+#ch:hover
+{
+    box-shadow: var(--box-shadow);
+}
+#circle3
+{
+    height:100px;
+    width: 100px;
+    margin:25px 35px ;
+    /* background-color: aquamarine; */
+    background-image: url(img/go7.jfif);
+    background-repeat: no-repeat;
+    border: 1px solid;
+    border-radius: 50%;
+    float: left;
+}
+#circle1
+{
+    height:200px;
+    width: 210px;
+    margin:50px 30px ;
+    /* background-color: aquamarine; */
+    /* background-image: url(img/elec.jpg); */
+    border: 1px solid;
+    background-size: auto;
+    /* border-radius: 50%; */
+    float: left;
+}
+
+
+
+.circlebg{
+    background: linear-gradient(skyblue,violet);
+ border-radius:5px;
+}
+.circlebg2
+{
+    background: linear-gradient(violet,skyblue);
+    border-radius:5px;
+    
+    }
+    .lastbox
+    {
+       display: flex;
+       justify-content:space-between;
+    
+    }
+    .boxlast{
+        height:150px;
+        width: 250px;
+        /* background-color: #130f40; */
+        background-image: url(img/grocery/lajio1.avif);
+        border-radius: 20px;
+        float: left;
+    }

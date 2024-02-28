@@ -1,0 +1,24 @@
+.h{
+    height: 150px;
+    width: 100%;
+    background-image: url(img/electronics/topdeal.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    
+}
+.hh{
+    height: 150px;
+    width: 100%;
+    background-image: url(img/electronics/smartphone.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    
+}
+#ch:hover
+{
+    box-shadow: var(--box-shadow);
+}
+
+
+
+
